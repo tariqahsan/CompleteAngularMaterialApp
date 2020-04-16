@@ -88,12 +88,5 @@ export class EmployeeListComponent implements OnInit {
       }
     });
   }
-  // onDelete($key) {
-  //   // if (confirm('Are you sure to delete this record?')) {
-  //   // this.service.deleteEmployee($key);
-  //   // this.notificationService.warn('! Deleted successfully');
-  //   this.dialogService.openConfirmDialog('Are you sure you want to delete this record?');
-  //  // }
-  // }
 
 }
