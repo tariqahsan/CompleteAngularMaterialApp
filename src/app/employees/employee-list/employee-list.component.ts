@@ -77,10 +77,9 @@ export class EmployeeListComponent implements OnInit {
     dialogConfig.width = '70%';
     this.dialog.open(EmployeeComponent, dialogConfig);
   }
-
-
+  
   onDelete($key: string){
-    this.dialogService.openConfirmDialog('Are you sure to delete this record?')
+    this.dialogService.openConfirmDialog('Are you sure you want to delete this record?')
     .afterClosed().subscribe(res =>{
       if(res){
         this.service.deleteEmployee($key);
